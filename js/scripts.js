@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
-        }
+        };
 
     };
 
@@ -29,7 +29,9 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     const navbarToggler = document.body.querySelector('.navbar-toggler');
-    document.body.style.display = display;
+ 
+    //document.body.style.display = display; esta funcion sirve para ocultar el contenido!
+    
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
